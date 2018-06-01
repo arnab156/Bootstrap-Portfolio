@@ -36,8 +36,34 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         <label>Upload any relevant file such as a Cover Letter/Resume/Certification/Artwork in .jpeg/.pdf/.doc only)</label>
                         <input type="file" class="form-control" id="exampleFormControlFile1">
-                        <hr>
-                        <input class="btn btn-lg btn-danger" type="submit" value="Submit">
+                  
+                        
+                     <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Send Message
+                            </button>
+                            
+                    <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Message Status</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                Are you sure you want to send a message? 
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>   
+            <!-- <hr> <input class="btn btn-lg btn-danger" type="submit" value="Submit"> -->
                     </div>  
                     
                 </form>   
@@ -53,7 +79,10 @@
             </div> 
             
             <br> 
-       
+            
+            
+        
+
     </div>
     </div>  
     <footer class="navbar fixed-bottom navbar-light bg-light" style="color: #666666"; font-family="Quicksand, sans-serif">© Copyright arnab majumdar </footer>  
