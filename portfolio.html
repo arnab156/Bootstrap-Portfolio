@@ -13,57 +13,89 @@
     </head>
 <body>
     <nav class="nav nav-pills flex-column flex-sm-row sticky-top">
-        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Arnab Majumdar</a>
-        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Portfolio</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="contact.html">Contact</a>
-        <a class="flex-sm-fill  nav-link btn btn-danger" href="magazine.html">Magazine</a>
+        <a class="flex-sm-fill btn nav-link" href="index.html">Arnab Majumdar</a>
+        <a class="flex-sm-fill btn nav-link active" href="#">Portfolio</a>
+        <a class="flex-sm-fill btn nav-link" href="contact.html">Contact</a>
+        <a class="flex-sm-fill  btn btn-danger nav-link " href="magazine.html">Magazine</a>
     </nav>
 <br><br> 
     <div class="container-fluid" style="font-family: 'Quicksand', sans-serif;">
       <h1 class="display-4 text-sm-center">Portfolio</h1>
       <hr> 
       <div class="row">
-                <div class="col-sm-4" style="background-color:none;"> 
+                <div class="col-md-3" style="background-color:none;"> 
                   <img class="img-thumbnail" src="assets/images/Project3.png" alt="MadeofChicago Logo">
                 </div>
-                <div class="col-sm-2 text-danger" style="background-color:none;"> <p>Made of Chicago Logo is inspired by the circular aspect of 
+                <div class="col-md-3 text-danger" style="background-color:none;"> <p>Made of Chicago Logo is inspired by the circular aspect of 
                   many famous Chicago sports teams, theaters and other brands. It also takes inspiration from the El transit system
                   which meanders, merges and trasfers not just the people but ideas shaped in a form of a "loop."
                 </p> </div>
-                <div class="col-sm-4" style="background-color: none;">
+                <div class="col-md-3" style="background-color: none;">
                     <img class="img-thumbnail col-sm-10"   style= "margin-left: 35px;" src="assets/images/Project4.jpg" alt="MadeofChicago Poster"> 
                 
                 </div>
-                <div class="col-sm-2 text-primary" style="background-color: none;"> <p>Made of Chicago Logo is inspired by the circular aspect of 
+                <div class="col-md-3 text-primary" style="background-color: none;"> <p>Made of Chicago Logo is inspired by the circular aspect of 
                     many famous Chicago sports teams, theaters and other brands. It also takes inspiration from the El transit system
                     which meanders, merges and trasfers not just the people but ideas shaped in a form of a "loop."
                   </p> </div>
       </div>
 
       <div class="row">
-                <div class="col-sm-2 text-primary" style="background-color:none;"> <p>Nephew  ?? is inspired by the circular aspect of 
+                <div class="col-md-3 text-primary" style="background-color:none;"> <p>Nephew  ?? is inspired by the circular aspect of 
                   many famous Chicago sports teams, theaters and other brands. It also takes inspiration from the El transit system
                   which meanders, merges and trasfers not just the people but ideas shaped in a form of a "loop."
                 </p> </div>
-                <div class="col-sm-4" style="background-color:none;"> 
+                <div class="col-md-3" style="background-color:none;"> 
                     <img class="img-thumbnail" src="assets/images/Painting1.jpg" alt="Picture of a watercolor:Nephew">
                   </div>
                 
-                <div class="col-sm-2 text-danger" style="background-color: none;"> <p> Wah Taj! Made of Chicago Logo is inspired by the circular aspect of 
+                <div class="col-md-3 text-danger" style="background-color: none;"> <p> Wah Taj! Made of Chicago Logo is inspired by the circular aspect of 
                     many famous Chicago sports teams, theaters and other brands. It also takes inspiration from the El transit system
                     which meanders, merges and trasfers not just the people but ideas shaped in a form of a "loop."
                   </p> </div>
-                  <div class="col-sm-4" style="background-color: none;">
+                  <div class="col-md-3" style="background-color: none;">
                       <img class="img-thumbnail "  src="assets/images/Painting2.jpg" alt="Picture of a watercolor:Wah Taj"> 
                   </div>
       </div>
       <br> <br>
       <hr> 
-      <h3 class="display-4 text-sm-center">Video Feature</h3>
-      <iframe align="right" width="100%" height="630" src="https://www.youtube.com/embed/7buva0ungXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-      <br> <br><br> <br> 
+
+      <!-- Optional: some overlay text to describe the video -->
+<div class="content">
+    <h1 class="display-4 text-sm-center">Made of Chicago -  Concept Video</h1>
+    <p class =" text-sm-center text-primary">Made of Chicago description here...</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" class="btn-danger"onclick="myFunction()">Pause</button>
+    <br> <br>
+  </div>
+
+
+<!-- The video HOW SHOULD I ANGE THE WIDTH OF THE VIDEO-->
+<span style="margin-left:50px; width: 75%" >  <video autoplay muted loop id="myVideo">
+    <source src="assets/rain.mp4"  type="video/mp4">
+  </video> </span>
+
+
+  
+  <script>
+      // Get the video
+      var video = document.getElementById("myVideo");
       
+      // Get the button
+      var btn = document.getElementById("myBtn");
+      
+      // Pause and play the video, and change the button text
+      function myFunction() {
+          if (video.paused) {
+              video.play();
+              btn.innerHTML = "Pause";
+          } else {
+              video.pause();
+              btn.innerHTML = "Play";
+          }
+      }
+      </script>
+
       <hr>
       <br> <br> 
       <!-- Second Carousel - Purple Line -->
@@ -178,46 +210,41 @@
           </div>
 <hr>
 <!-- Eye on India section -->
-<span style="background-color: bisque"> 
+
           <h1 class="display-4 text-sm-center">Eye on India Sari Project</h1>
           <p class=" text-center text-primary" > Explanation of Eye on India here. Give an explanation of project.
             Student work and media.  </p>
-          <div class="row">
-            <div class="col-sm-2" style="background-color:none;"> 
-              <img src="assets/images/EOI/1.jpg" alt="Eye on India">
+          
+            <div class="row">
+            <div class="col-sm-4" style="background-color:none;"> 
+              <img src="assets/images/EOI/1.jpg" alt="Eye on India" class="img-fluid">
+              <img src="assets/images/EOI/2.jpg" alt="Eye on India"class="img-fluid">
             </div>
-            <div class="col-sm-2 " style="background-color:none;"> 
-                <img src="assets/images/EOI/2.jpg" alt="Eye on India">
+          
+            <div class="col-sm-4" style="background-color:none;"> 
+              <img src="assets/images/EOI/4.jpg" alt="Eye on India"class="img-fluid">
+              <img src="assets/images/EOI/3.jpg" alt="Eye on India"class="img-fluid"> 
             </div>
-            <div class="col-sm-2" style="background-color: none;">
-                <img src="assets/images/EOI/3.jpg" alt="Eye on India">
+          
+            <div class="col-sm-4" style="background-color:none;"> 
+              <img src="assets/images/EOI/6.jpg" alt="Eye on India"class="img-fluid">
+              <img src="assets/images/EOI/5.jpg" alt="Eye on India"class="img-fluid"> 
             </div>
-            <div class="col-sm-2" style="background-color:none;"> 
-                <img src="assets/images/EOI/4.jpg" alt="Eye on India">
-              </div>
-              <div class="col-sm-2 " style="background-color:none;"> 
-                  <img src="assets/images/EOI/5.jpg" alt="Eye on India">
-              </div>
-              <div class="col-sm-2" style="background-color: none;">
-                  <img src="assets/images/EOI/6.jpg" alt="Eye on India">
-              </div>
-            
+             
           </div>
 <br>
           <div class="row"> 
-          
           <div class="col-sm-6" style="background-color:none;">  
-            <img src="assets/images/EOI/7.jpg" alt="Eye on India" height="400px"style="padding-left: 60px;"> 
+            <img src="assets/images/EOI/7.jpg" alt="Eye on India" height="400px" class="img-fluid"> 
           </div>
-           <div class="col-sm-3" style="background-color:none;"> 
-             <img src="assets/images/EOI/8.jpg" alt="Eye on India" height="400px" style="padding-left: 20px;">   
+           <div class="col-sm-6" style="background-color:none;"> 
+             <img src="assets/images/EOI/8.jpg" alt="Eye on India"  width= "49%" class="img-fluid">  
+             <img src="assets/images/EOI/9.jpg" alt="Eye on India"  width="49%" class="img-fluid">   
           </div>  
-          <div class="col-sm-3" style="background-color:none;"> 
-          <img src="assets/images/EOI/9.jpg" alt="Eye on India" height="400px" style="padding-left: 20px;">   
-          </div>  
+          
       
           </div>
-</span>
+
 
 
 
@@ -275,16 +302,15 @@
       </a>
   </div>
 <hr>
+<div> 
+    <h3 class="display-4 text-sm-center">Video Feature</h3>
+    <iframe align="right" width="100%" height="630" src="https://www.youtube.com/embed/7buva0ungXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <br> <br><br> <br> 
+    <hr>
 
-
-
-
-
-
-
-
-
-  
+</div>
+      
+ 
     </div> <!-- end of the container -->
 
     <footer class="navbar fixed-bottom navbar-light bg-light" style="color: #666666"; font-family="Quicksand, sans-serif">© Copyright arnab majumdar </footer>  
